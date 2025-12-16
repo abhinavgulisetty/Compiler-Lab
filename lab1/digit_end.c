@@ -23,7 +23,7 @@ int main(){
         printf("No match\n");
     }
     else{
-        regerr(reti,&regex,msgbuf,sizeof(msgbuf));
+        regerror(reti,&regex,msgbuf,sizeof(msgbuf));
         fprintf(stderr,"Regex match failed: %s\n",msgbuf);
     }
     regfree(&regex);
